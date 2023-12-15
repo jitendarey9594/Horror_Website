@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horror Home Parallax Website Demo | Cover By Jitendar E Y</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Starting Nav bar -->
+    <nav>
+      <div class="container nav-container">
+        <a href="" class="logo"><h3>Beg Joker.</h3></a>
+        <ul class="nav-links">
+          <li><a href="  " class="active">Home</a></li>
+          <li><a href="  ">About</a></li>
+          <li><a href="  ">Services</a></li>
+          <li><a href="  ">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="Parallax">
+      <h1 class="Parallax-Heading">Parallax Website</h1>
+      <img src="./img/tree-left.png" id="tree-left" />
+      <img src="./img/tree-right.png" id="tree-right" />
+      <img src="./img/gate-left.png" id="gate-left" />
+      <img src="./img/gate-right.png" id="gate-right" />
+      <img src="./img/grass.png" id="grass" />
+    </header>
+
+    <!-- End nav bar -->
+
+    <section class="Parallax-demo">
+      <div class="container demon-text-container">
+        <h2>Parallax Scroll Website</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          harum nostrum obcaecati necessitatibus nihil nesciunt possimus!
+          Quibusdam laborum cum inventore. Dolores dolor tempora cupiditate
+          perspiciatis ipsum animi corrupti nam at. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Dolor voluptates a, deserunt soluta
+          rerum modi saepe, similique odio cupiditate autem, quidem et
+          voluptatum eos quibusdam eius enim nemo error. Vel! Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit. Aliquam harum nostrum obcaecati
+          necessitatibus nihil nesciunt possimus! Quibusdam laborum cum
+          inventore. Dolores dolor tempora cupiditate perspiciatis ipsum animi
+          corrupti nam at. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Dolor voluptates a, deserunt soluta rerum modi saepe, similique
+          odio cupiditate autem, quidem et voluptatum eos quibusdam eius enim
+          nemo error. Vel! Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Aliquam harum nostrum obcaecati necessitatibus nihil nesciunt
+          possimus! Quibusdam laborum cum inventore. Dolores dolor tempora
+          cupiditate perspiciatis ipsum animi corrupti nam at. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Dolor voluptates a,
+          deserunt soluta rerum modi saepe, similique odio cupiditate autem,
+          quidem et voluptatum eos quibusdam eius enim nemo error. Vel! Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Aliquam harum
+          nostrum obcaecati necessitatibus nihil nesciunt possimus! Quibusdam
+          laborum cum inventore. Dolores dolor tempora cupiditate perspiciatis
+          ipsum animi corrupti nam at. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Dolor voluptates a, deserunt soluta rerum modi
+          saepe, similique odio cupiditate autem, quidem et voluptatum eos
+          quibusdam eius enim nemo error. Vel! Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Aliquam harum nostrum obcaecati
+          necessitatibus nihil nesciunt possimus! Quibusdam laborum cum
+          inventore. Dolores dolor tempora cupiditate perspiciatis ipsum animi
+          corrupti nam at. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Dolor voluptates a, deserunt soluta rerum modi saepe, similique
+          odio cupiditate autem, quidem et voluptatum eos quibusdam eius enim
+          nemo error. Vel! Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Aliquam harum nostrum obcaecati necessitatibus nihil nesciunt
+          possimus! Quibusdam laborum cum inventore. Dolores dolor tempora
+          cupiditate perspiciatis ipsum animi corrupti nam at. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Dolor voluptates a,
+          deserunt soluta rerum modi saepe, similique odio cupiditate autem,
+          quidem et voluptatum eos quibusdam eius enim nemo error. Vel!
+        </p>
+      </div>
+    </section>
+
+    <script>
+      let ParallaxHeadingText = document.querySelector(".Parallax-Heading");
+      let TreeLeft = document.querySelector("#tree-left");
+      let TreeRight = document.querySelector("#tree-right");
+      let GateLeft = document.querySelector("#gate-left");
+      let GateRight = document.querySelector("#gate-right");
+
+      window.addEventListener("scroll", () => {
+        let Value = window.scrollY;
+        ParallaxHeadingText.style.marginTop = Value * 2.5 + "px";
+        TreeLeft.style.left = Value * 1.5 + "px";
+        TreeRight.style.right = Value * 1.5 + "px";
+        GateLeft.style.left = Value * 0.5 + "px";
+        GateRight.style.left = Value * -0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
